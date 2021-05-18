@@ -1,2 +1,4 @@
 //Insertar datos
-INSERT INTO 
+
+INSERT INTO usuarios (nombre,apellido,celular,direccion) VALUES ("Abel","Correa","26262523","calle falsa 123")
+

@@ -1,0 +1,7 @@
+//ACTUALI UN DATO !Siempre usar WHERE
+
+UPDATE usuarios SET nombre="Carlos" WHERE id_cliente=3
+
+//ACTUALIZAR VARIOS DATOS
+
+UPDATE usuarios SET nombre="Robin" WHERE id_cliente BETWEEN 1 AND 3

@@ -1,0 +1,39 @@
+//SELECT LA SENTENCIA QUE MAS SE UTILIZA, DESDE ORDENAMINETO, AGREGACION,AGRUPAMINETO Y UNIONES
+
+
+//SELECCIONAR TODO DE UNA TABLA
+SELECT * FROM clientes
+
+//SELECCIONAR SOLO UNA COLUMNA EJ:nombre
+SELECT nombre FROM clientes
+
+//SELECCIONAR MAS COLUMNAS EJ:nombre,apellido
+SELECT nombre,apellido FROM clientes
+
+//SELECCIONAR UNA ROW ESPECIFICA
+SELECT * from clientes WHERE id_cliente=10
+
+//SELECCIONAR DATOS ESPECIFICOS DE UNA ROW
+SELECT nombre,apellido FROM clientes WHERE id_cliente=10
+
+//SELECCIONAR ROWS CON RELACIONES =, AND, OR
+SELECT * from clientes WHERE nombre='Abel'
+SELECT * from clientes WHERE telefono=364346346
+
+SELECT * from clientes WHERE telefono=364346346 AND nombre='Abel'
+
+SELECT * from clientes WHERE telefono=364346346 OR nombre='Abel'
+
+//SELECCIONAR ROWS CON >, <, <=, >=, !=, BETWEEN__AND___, LIKE, IN
+SELECT * FROM clientes WHERE id_cliente >110
+SELECT * FROM clientes WHERE id_cliente <110
+SELECT * FROM clientes WHERE id_cliente <=110
+SELECT * FROM clientes WHERE id_cliente >=110
+
+
+
+
+
+
+
+

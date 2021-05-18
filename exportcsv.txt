@@ -1,0 +1,6 @@
+//Exportar tablas de la base de datos a archivos csv
+
+SELECT * FROM clientes
+INTO OUTFILE "C:/Ruta_de_ejemplo/nombre_archivo.csv"
+FIELDS TERMINATED BY ";"
+LINES TERMINATED BY "\n\r"

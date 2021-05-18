@@ -1,0 +1,11 @@
+
+//Cargar archivos en formato csv a una base de datos
+
+LOAD DATA LOCAL INFILE "C:/users/Ruta_de_ejemplo/clientes.cvs"
+INTO TABLE clientes
+FIELDS TERMINATED BY ";"
+LINES TERMINATED BY "\n"
+
+//A que columnas integrar los datos por ejemplo:
+
+(nombre, apellido, edad, telefono)
