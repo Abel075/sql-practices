@@ -1,0 +1,16 @@
+//SELECT LA SENTENCIA QUE MAS SE UTILIZA, DESDE REGISTRO, ORDENAMINETO, AGREGACION,AGRUPAMINETO Y UNIONES
+
+-UNIONES DE TABLAS INNER JOIN, LEFT JOIN, RIGHT JOIN
+
+//RELACIONAR DOS TABLAS
+SELECT * FROM clientes INNER JOIN pedidos ON cliente.id_cliente = pedidos.id_cliente
+
+SELECT nombre,id_producto FROM clientes INNER JOIN pedidos ON cliente.id_cliente = pedidos.id_cliente
+
+SELECT nombre,id_producto, cantidad FROM clientes INNER JOIN pedidos ON cliente.id_cliente = pedidos.id_cliente WHERE cantidad > 4
+
+//RELACIONAR TABLAS DANDO PRIORIDAD A LA  TABLA IZQUIERDA
+SELECT * FROM clientes LEFT JOIN pedidos ON clientes.id_cliente = pedidos.id_pedido
+
+//RELACIONAR TABLAS DANDO PRIORIDAD A LA  TABLA DERECHA
+SELECT * FROM clientes RIGHT JOIN pedidos ON clientes.id_cliente = pedidos.id_pedido
