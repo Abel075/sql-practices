@@ -1,0 +1,16 @@
+-DROP
+
+CREATE DATABASE dos
+
+DROP DATABASE dos
+
+CREATE TABLE productos (
+id_producto INT NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (id_producto),
+nombre VARCHAR(150),
+precio INT
+);
+
+DROP TABLE productos
+
+
